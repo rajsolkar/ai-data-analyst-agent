@@ -13,9 +13,9 @@ st.title("AI Data Analyst")
 st.header("Analyze Your Data With Ollama and OpenAI")
 st.write(f"""Ollama For Local Execution""" )
 st.write(f"""OpenAI For Online/Cloud Execution""" )
+st.divider()
 
-
-file = st.file_uploader("Upload Ypur CSV File",type = "csv")
+file = st.file_uploader("Upload Your CSV File",type = "csv")
 
 
 if file:
