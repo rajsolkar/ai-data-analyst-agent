@@ -10,8 +10,9 @@ from utils.data import load_csv ,save_to_sql,get_sql_data
 st.set_page_config(page_title="AI Data Analyst", layout="wide")
 
 st.title("AI Data Analyst")
-st.header("Analyze Your Data With Ollama")
-st.write(f"""Ollama Model: phi3 """ )
+st.header("Analyze Your Data With Ollama and OpenAI")
+st.write(f"""Ollama For Local Execution""" )
+st.write(f"""OpenAI For Online/Cloud Execution""" )
 
 
 file = st.file_uploader("Upload Ypur CSV File",type = "csv")
@@ -47,7 +48,7 @@ Give a clear and concise answer.
         st.write("### AI Response:")
         st.write(response)
 
-    # Optional: Basic chart
+    #Basic chart
     if st.checkbox("Show simple charts"):
         num_cols = df.select_dtypes(include=['number']).columns
         if len(num_cols) > 0:
