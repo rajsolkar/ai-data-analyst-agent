@@ -67,6 +67,10 @@ streamlit run app.py
 - Add user authentication and access control
 - Deploy publicly using Streamlit Cloud or Hugging Face Spaces
 
+⚠️ **Note:**  
+The OpenAI API key used in this demo has limited credits, so you may occasionally see an "insufficient_quota" error.  
+The full logic and LLM integration work correctly when used with an active API key.
+
 ## Author
 Raj Solkar  
 Aspiring Data Analyst | AI Enthusiast  
