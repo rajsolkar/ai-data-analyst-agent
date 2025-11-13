@@ -4,7 +4,7 @@ sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 import streamlit as st
 import pandas as pd
-from utils.ai import query_local_llm
+from utils import query_ai
 from utils.data import load_csv ,save_to_sql,get_sql_data
 
 st.set_page_config(page_title="AI Data Analyst", layout="wide")
@@ -43,7 +43,7 @@ QUESTION: {question}
 
 Give a clear and concise answer.
 """
-        response = query_local_llm(prompt)
+        response = query_ai(prompt)
         st.write("### AI Response:")
         st.write(response)
 
